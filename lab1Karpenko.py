@@ -18,14 +18,17 @@ def draw_cross(height=11, width=30):
             print(RED + ' ' * 11 + WHITE + ' ' * 8 + RED + ' ' * 11 + END)
     print(RED + ' ' * 30 + END)
 
+
 print('Task 1 : Swiss Flag')
 draw_cross()
 
 
 print('Task 2 : Pattern')
 
+
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
+
 
 def draw_pattern(R, r, offset):
     for y in range(h):
@@ -37,6 +40,7 @@ def draw_pattern(R, r, offset):
             else:
                 print(f"{WHITE}  {END}", end="")
         print()
+
 
 frames = [1, 4, 7]
 i = 0
@@ -67,4 +71,5 @@ notdigits= sum(x < -3 or x > 3 for x in numbers)
 percentage = (digits * 100) / (digits+ notdigits)
 needed = int(percentage / 10)
 least = 10 - needed
+
 print(f'{percentage:.2f}% [{RED}{"+" * needed}{END} {GREEN}{"+" * least}{END}]')
