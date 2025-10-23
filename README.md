@@ -4,4 +4,4 @@
 3) y = x/3
 4) -3<=x<=3
 
-Файл lab1karpenko.py
+Файл lab1Karpenko.py
